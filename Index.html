@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShopEasy - Your Online Store</title>
+    <title>Hoops Arena - Basketball World</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
+            background: #f4f4f4;
         }
         header {
             background: #ff6600;
@@ -19,16 +20,22 @@
         }
         .hero {
             padding: 50px;
-            background: #f4f4f4;
+            background: url('https://source.unsplash.com/1600x900/?basketball') center/cover;
+            color: white;
+            text-shadow: 2px 2px 4px black;
         }
-        .products {
+        .about {
+            padding: 20px;
+            background: white;
+        }
+        .players {
             display: flex;
             justify-content: center;
             gap: 20px;
             padding: 20px;
             flex-wrap: wrap;
         }
-        .product {
+        .player-card {
             border: 1px solid #ddd;
             padding: 15px;
             width: 200px;
@@ -54,40 +61,39 @@
 </head>
 <body>
 
-    <header>ShopEasy - Your Online Store</header>
+    <header>Hoops Arena - Basketball World</header>
 
     <section class="hero">
-        <h1>Welcome to ShopEasy</h1>
-        <p>Find the best deals on your favorite products!</p>
+        <h1>Welcome to Hoops Arena</h1>
+        <p>Your ultimate basketball destination</p>
     </section>
 
-    <section class="products">
-        <div class="product">
-            <h2>Product 1</h2>
-            <p>$20.00</p>
-            <button onclick="addToCart()">Add to Cart</button>
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Hoops Arena is the go-to platform for basketball lovers. Stay updated with the latest news, player stats, and game highlights.</p>
+    </section>
+
+    <section class="players">
+        <div class="player-card">
+            <h2>Player 1</h2>
+            <p>Position: Guard</p>
+            <button onclick="alert('Player 1 Details')">View Profile</button>
         </div>
-        <div class="product">
-            <h2>Product 2</h2>
-            <p>$30.00</p>
-            <button onclick="addToCart()">Add to Cart</button>
+        <div class="player-card">
+            <h2>Player 2</h2>
+            <p>Position: Forward</p>
+            <button onclick="alert('Player 2 Details')">View Profile</button>
         </div>
-        <div class="product">
-            <h2>Product 3</h2>
-            <p>$15.00</p>
-            <button onclick="addToCart()">Add to Cart</button>
+        <div class="player-card">
+            <h2>Player 3</h2>
+            <p>Position: Center</p>
+            <button onclick="alert('Player 3 Details')">View Profile</button>
         </div>
     </section>
 
     <footer>
-        &copy; 2025 ShopEasy. All rights reserved.
+        &copy; 2025 Hoops Arena. All rights reserved.
     </footer>
-
-    <script>
-        function addToCart() {
-            alert("Item added to cart!");
-        }
-    </script>
 
 </body>
 </html>
